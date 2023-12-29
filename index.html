@@ -1,7 +1,93 @@
-<h1 style="color: #5e9ca0; text-align: center;">&lt;Welcome to the Batthy Site!/&gt;</h1>
-<h2 style="color: #2e6c80;">Download:</h2>
-<p style="text-align: justify;">To download, please visit the <a title="Download Here" href="https://github.com/Majnek/BatthyTool/releases" target="_blank">Download Page</a>.</p>
-<p>&nbsp;</p>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Batthy Tool</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 50px;
+            transition: background-color 0.3s, color 0.3s;
+        }
+
+        .download-button {
+            display: inline-block;
+            padding: 15px 30px;
+            font-size: 18px;
+            text-decoration: none;
+            background-color: #2e6c80;
+            color: #ffffff;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+
+        .download-button:hover {
+            background-color: #1a4f5f;
+        }
+
+        .dark-mode .download-button {
+            background-color: #1a4f5f;
+        }
+
+        .dark-mode {
+            background-color: #121212;
+            color: #ffffff;
+        }
+
+        .dark-mode-switch-container {
+            position: fixed;
+            top: 10px;
+            right: 10px;
+            display: flex;
+            align-items: center;
+        }
+
+        .dark-mode-label {
+            margin-right: 5px;
+        }
+
+        .features-section {
+            margin-top: 50px;
+        }
+
+        .feature {
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Welcome to Batthy Tool!</h1>
+    <p>Discover the power of Batthy Tool. Download now!</p>
+    <a href="https://github.com/Majnek/BatthyTool/releases" class="download-button">Download Batthy Tool</a>
+
+    <div class="dark-mode-switch-container">
+        <label for="dark-mode-switch" class="dark-mode-label">Dark Mode:</label>
+        <input type="checkbox" id="dark-mode-switch" onclick="toggleDarkMode()">
+    </div>
+
+    <div class="features-section">
+        <h2>Key Features:</h2>
+        <div class="feature">
+            <h3>Unitly Tools</h3>
+            <p>Powerful unit conversion tools to make your tasks easier.</p>
+        </div>
+        <div class="feature">
+            <h3>Custom Tools</h3>
+            <p>Better is custom. make batthy your own with color changer and a language changer that supports Polish, English, Italian!</p>
+        </div>
+        <!-- Add more features as needed -->
+    </div>
+
+    <script>
+        function toggleDarkMode() {
+            document.body.classList.toggle('dark-mode');
+        }
+    </script>
+</body>
+</html>
+
 <h2 style="color: #2e6c80;">Some useful features:</h2>
 <ol style="list-style: none; font-size: 14px; line-height: 32px; font-weight: bold;">
 <li style="clear: both;"><img style="float: left;" src="https://html-online.com/img/01-interactive-connection.png" alt="interactive connection" width="45" />Unitly Tools</li>
